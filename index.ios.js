@@ -2,20 +2,17 @@
 
 // Import a library to help create a component
 import React from 'react'; // imports React library
-import { Text, AppRegistry } from 'react-native'; // imports ReactNative library
-
+import { AppRegistry } from 'react-native'; // imports ReactNative library
+import Header from './src/components/header';
 
 
 // Create a component
 const App = () => (
-  <Text>Some Text</Text>
+  <Header />
 );
 
 // Render it to the device
-AppRegistry.registerComponent('albums', () => App); // albums because that is the name of our project
-
-
-
-
+AppRegistry.registerComponent('albums', () => App);
+// albums because that is the name of our project
 // React vs ReactNative
 // ES6 == new version of javascript
